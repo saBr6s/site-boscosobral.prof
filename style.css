@@ -1,0 +1,121 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ESTILO GERAL DO CORPO */
+body {
+    /* Fonte Clássica e Formal */
+    font-family: 'Times New Roman', Times, serif; 
+    line-height: 1.6;
+    background-color: #FFFFFF; /* Fundo branco */
+    color: #333333; /* Texto em cinza escuro para formalidade */
+    display: flex; /* Ativa o Flexbox para organizar os elementos verticalmente */
+    flex-direction: column; 
+    min-height: 100vh; /* Garante que o body ocupe a altura total da tela */
+}
+
+/* CENTRALIZAÇÃO DO CONTEÚDO */
+.container {
+    width: 90%;
+    max-width: 960px; /* Limita a largura para melhor leitura */
+    margin: 0 auto; /* Centraliza o container */
+}
+
+/* ESTILOS DO CABEÇALHO (HEADER) */
+header {
+    background-color: #F8F8F8; /* Fundo cinza claro */
+    padding: 20px 0;
+    border-bottom: 2px solid #DDDDDD; /* Linha sutil de separação */
+}
+
+header h1 {
+    font-size: 2.2em;
+    font-weight: bold;
+    color: #111111; /* Preto quase puro */
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 1.1em;
+    font-style: italic;
+    color: #555555;
+}
+
+/* ESTILOS DA NAVEGAÇÃO (NAV) */
+nav {
+    background-color: #EEEEEE; /* Fundo um pouco mais escuro que o header */
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
+
+nav ul {
+    list-style: none;
+    text-align: left;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #0000EE; /* Azul tradicional para links */
+    font-weight: normal;
+    padding: 5px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #000066; /* Azul escuro no hover/ativo */
+    border-bottom: 2px solid #000066; /* Sublinhado no link ativo/hover */
+}
+
+/* ESTILOS DO CONTEÚDO PRINCIPAL (MAIN) */
+main {
+    padding-bottom: 40px;
+    flex-grow: 1; /* Faz o conteúdo principal preencher o espaço restante */
+}
+
+main h2 {
+    font-size: 1.8em;
+    color: #333333;
+    margin-top: 20px;
+    border-bottom: 1px solid #CCCCCC;
+    padding-bottom: 5px;
+}
+
+main h3 {
+    font-size: 1.4em;
+    color: #555555;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+main p, main ul {
+    font-size: 1.05em;
+    margin-bottom: 15px;
+}
+
+main ul {
+    margin-left: 25px;
+    list-style-type: disc; /* Marcador de lista simples */
+}
+
+/* ESTILOS DO RODAPÉ (FOOTER) */
+footer {
+    background-color: #333333; /* Fundo escuro sutil */
+    color: #FFFFFF;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #AAAAAA;
+    text-decoration: none;
+}
