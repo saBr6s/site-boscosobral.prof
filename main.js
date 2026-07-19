@@ -29,3 +29,13 @@ function calcularTempoServico() {
     }
 }
 calcularTempoServico();
+
+(function() {
+    function atualizarAnoAutomaticamente() {
+        const elementoAno = document.getElementById('ano-atual');
+        if (elementoAno) {
+            elementoAno.textContent = new Date().getFullYear();
+        }
+    }
+    atualizarAnoAutomaticamente();
+})();
